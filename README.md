@@ -69,3 +69,5 @@ function say() {
 Browser Support:
 * Chrome
 * Safari
+
+Need more? Check out [the reference](https://github.com/simon-tiger/speechjs/wiki/Reference).
