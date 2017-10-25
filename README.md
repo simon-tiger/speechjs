@@ -1,5 +1,5 @@
-# speechrec-js
-A Library for speech recognition.
+# speechjs
+A Library for speech recognition and synthesis.
 
 ## Example (Recognition)
 ```javascript
