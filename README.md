@@ -1,5 +1,5 @@
-# speechrec-js
-A Library for speech recognition.
+# speechjs
+A Library for speech recognition and synthesis.
 
 ## Example (Recognition)
 ```javascript
@@ -12,16 +12,16 @@ setSpeechRecVar('interim', true);
 // Anytime somebody speaks
 function speechRecognized(result) {
 	if (result.toBool) {
-  	document.getElementById('result').innerHTML = result.toString;
+  		document.getElementById('result').innerHTML = result.toString;
 
-  	// Is it an interim result (this will never be
-  	// true if you don't turn interim mode on)
-  	if (result.isInterim) {
-  		document.getElementById('result').innerHTML += ' (interim)';
-  	} else {
-  		document.getElementById('result').innerHTML += ' (final)';
+  		// Is it an interim result (this will never be
+  		// true if you don't turn interim mode on)
+  		if (result.isInterim) {
+  			document.getElementById('result').innerHTML += ' (interim)';
+  		} else {
+  			document.getElementById('result').innerHTML += ' (final)';
+  		}
   	}
-  }
 }
 
 // Start listening
@@ -69,3 +69,5 @@ function say() {
 Browser Support:
 * Chrome
 * Safari
+
+Need more? Check out [the reference](https://github.com/simon-tiger/speechjs/wiki/Reference).
