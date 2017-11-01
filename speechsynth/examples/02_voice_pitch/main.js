@@ -1,7 +1,7 @@
 var textbox;
 var pitch;
 
-window.onload = function() {
+window.addEventListener('load', function() {
   // Change color so we can see everything
   document.body.style.color = '#FFF';
   document.body.style.background = '#000';
@@ -17,7 +17,7 @@ window.onload = function() {
   endedSpeaking(function() {
     document.body.style.background = '#000';
   });
-}
+});
 
 // When we click say something
 window.onclick = say;

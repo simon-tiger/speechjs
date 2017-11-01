@@ -19,7 +19,11 @@ function setSpeechSynthVar(name, value) {
 }
 
 // Available Voices
-var availableVoices = speechSynth.getVoices();
+var availableVoices;
+
+window.addEventListener('load', function() {
+  availableVoices = speechSynth.getVoices();
+});
 
 // Available Voice Names
 function getVoiceNames() {
