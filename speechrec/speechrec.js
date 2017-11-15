@@ -32,7 +32,7 @@ function setSpeechRecVar(name, value) {
 }
 
 // Anytime somebody speaks
-speechRec.onResult = function(e) {
+speechRec.onresult = function(e) {
 	var result = e.results[e.resultIndex];
 
 	// speechRecognized is the function
